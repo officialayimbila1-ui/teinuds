@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>TEIN UDS Tamale Campus – Tertiary Education Institutions Network</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=Hanken+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fbfaf7;--ink:#14110f;--mut:#5b5650;--card:#fff;--line:#e3dfd8;--red:#d6202a;--green:#00703c;--deep:#0a3d24;--black:#111;
+--hd:"Bricolage Grotesque","Arial Narrow",Arial,sans-serif;--bd:"Hanken Grotesk",system-ui,-apple-system,"Segoe UI",Arial,sans-serif;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0e1210;--ink:#f3f1ec;--mut:#a9a49b;--card:#171d19;--line:#2a312c;--red:#ff4a54;--green:#2fbf7a}}
+:root[data-theme="dark"]{--bg:#0e1210;--ink:#f3f1ec;--mut:#a9a49b;--card:#171d19;--line:#2a312c;--red:#ff4a54;--green:#2fbf7a}
+html{scroll-padding-top:calc(72px + env(safe-area-inset-top,0px));scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.65 var(--bd)}
+img{max-width:100%;display:block}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--red);outline-offset:3px}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--bg)}
+.wrap{max-width:1120px;margin:0 auto;padding:0 22px}
+.stripe{height:10px;background:linear-gradient(90deg,var(--black) 0 25%,var(--red) 25% 50%,#fff 50% 75%,var(--green) 75%)}
+.spons{background:var(--deep);color:#fff;text-align:center;font-size:14px;font-weight:500;padding:8px 16px;line-height:1.4}.spons b{color:#9fe0bd}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:11;background:var(--bg);border-bottom:1px solid var(--line)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:64px;gap:16px}
+.brand{display:flex;align-items:center;gap:10px;font:800 20px var(--hd);text-decoration:none}
+.brand img{height:38px;width:auto;background:#fff;border-radius:6px;padding:2px}
+nav{display:flex;gap:20px;font-weight:500;font-size:15px}
+nav a{text-decoration:none;color:var(--mut)}nav a:hover{color:var(--red)}
+#mb{display:none;background:none;border:1px solid var(--line);color:var(--ink);border-radius:8px;padding:8px 12px;font:inherit}
+.btn{display:inline-block;background:var(--red);color:#fff;padding:13px 24px;border-radius:999px;font-weight:700;text-decoration:none;border:2px solid var(--red)}
+.btn.alt{background:transparent;color:inherit;border-color:currentColor}
+.hero{padding:72px 0 64px}
+.hero .wrap{display:grid;grid-template-columns:1.25fr .75fr;gap:48px;align-items:center}
+h1,h2,h3{font-family:var(--hd);line-height:1.04;margin:0}
+h1{font-size:clamp(44px,7vw,88px);font-weight:800;letter-spacing:-.025em}
+h1 span{display:block;color:var(--green)}
+.hero p{font-size:19px;color:var(--mut);max-width:50ch;margin:22px 0 30px}
+.hero .cta{display:flex;gap:12px;flex-wrap:wrap}
+.crest{background:#fff;border-radius:50%;aspect-ratio:1;display:grid;place-items:center;border:10px solid var(--green);box-shadow:14px 14px 0 var(--red)}
+.crest img{width:68%}
+section{padding:80px 0}
+h2{font-size:clamp(32px,4.4vw,52px);font-weight:800;letter-spacing:-.02em;margin-bottom:14px}
+.lead{color:var(--mut);max-width:62ch;margin:0 0 40px}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
+.about .ph{border-radius:18px;aspect-ratio:4/3;object-fit:cover;width:100%}
+.pillars{display:grid;gap:14px;margin-top:22px}
+.pillars div{border-left:5px solid var(--green);padding:2px 0 2px 16px}
+.pillars div:nth-child(2){border-color:var(--red)}.pillars div:nth-child(3){border-color:var(--ink)}
+.pillars b{font-family:var(--hd);font-size:20px;display:block}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:56px;border-top:3px solid var(--ink)}
+.stats div{padding:18px 16px 0 0}.stats b{font:800 40px var(--hd);display:block;color:var(--red)}
+.stats span{color:var(--mut);font-size:15px}
+.hist{margin-top:56px}.hist h3{font-size:30px;margin-bottom:10px}.hist .lead{margin-bottom:22px}.hgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.hgrid div{background:var(--bg);border:1px solid var(--line);border-top:6px solid var(--green);border-radius:12px;padding:16px}.hgrid div:nth-child(2){border-top-color:var(--red)}.hgrid div:nth-child(3){border-top-color:var(--ink)}.hgrid b{font:800 21px var(--hd);display:block;color:var(--red);margin-bottom:6px}.hgrid p{margin:0;font-size:15px;color:var(--mut);line-height:1.55}
+.patron{background:var(--deep);color:#f3f1ec}
+.patron .wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:56px;align-items:center}
+.pframe{position:relative;margin:0 0 18px 18px}
+.pframe::before{content:"";position:absolute;inset:18px -18px -18px 18px;background:var(--red);border-radius:16px}
+.pframe img{position:relative;border-radius:16px;width:100%;aspect-ratio:4/5;object-fit:cover;border:4px solid #fff}
+.patron h2{margin-bottom:6px}.role{color:#9fe0bd;font-weight:700;margin:0 0 20px}
+.patron p{color:#dcd8cf;margin:0 0 14px}
+.facts{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:24px}
+.facts div{background:rgba(255,255,255,.08);border-radius:12px;padding:14px 16px;font-size:15px;color:#e9e5dc}
+.facts b{display:block;color:#fff;font-family:var(--hd);font-size:17px}
+blockquote{margin:22px 0 0;padding-left:18px;border-left:4px solid var(--red);font:500 20px/1.4 var(--hd);color:#fff}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden;border-top:6px solid var(--green)}
+.card:nth-child(3n+2){border-top-color:var(--red)}.card:nth-child(3n){border-top-color:var(--ink)}
+.card .ph{aspect-ratio:4/5;width:100%;object-fit:cover}
+.card div{padding:14px 16px 18px}.card b{font:700 18px var(--hd);display:block}.card span{color:var(--mut);font-size:14.5px}
+.card.lg{grid-column:span 2}.card.lg .ph{aspect-ratio:8/5}
+.alt-bg{background:linear-gradient(var(--card),var(--card));border-block:1px solid var(--line)}
+.tl{list-style:none;margin:0;padding:0;border-left:4px solid var(--line);margin-left:8px}
+.tl li{display:grid;grid-template-columns:110px 84px 1fr;gap:18px;align-items:center;padding:18px 0 18px 22px;position:relative;border-bottom:1px solid var(--line)}
+.tl li::before{content:"";position:absolute;left:-12px;top:50%;width:20px;height:20px;border-radius:50%;background:var(--red);border:4px solid var(--bg);transform:translateY(-50%)}
+.tl .yr{font:800 20px var(--hd);color:var(--green)}
+.tl img{width:84px;height:84px;border-radius:50%;object-fit:cover}
+.tl b{font:700 19px var(--hd);display:block}.tl span{color:var(--mut);font-size:15px}
+.cam{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.cam div{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px}
+.cam b{font:800 22px var(--hd);display:block}.cam span{color:var(--mut);font-size:15px}
+.ev{display:grid;gap:14px}
+.ev article{display:grid;grid-template-columns:96px 1fr;gap:20px;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px}
+.date{background:var(--red);color:#fff;border-radius:10px;text-align:center;padding:10px 6px;font:800 30px/1 var(--hd)}
+.date small{display:block;font:700 13px var(--bd);margin-top:4px}
+.ev h3{font-size:22px;margin-bottom:4px}.ev p{margin:0;color:var(--mut)}
+.gal{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.gal .ph{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:12px}
+.gal .ph:first-child{grid-column:span 2;grid-row:span 2;aspect-ratio:auto;height:100%}
+.join{background:var(--green);color:#fff;text-align:center}
+.join h2{margin-inline:auto;max-width:18ch}.join p{max-width:52ch;margin:0 auto 28px;color:#e4f4ea}
+.join .btn{background:#fff;color:var(--deep);border-color:#fff}.join .btn.alt{background:transparent;color:#fff}
+.regnote{margin-top:30px}.badge{display:inline-block;background:#d6202a;color:#fff;font:800 14px var(--hd);letter-spacing:.1em;text-transform:uppercase;padding:9px 20px;border-radius:999px;border:2px solid #fff}.regnote p{margin:16px auto 0;font-weight:700;color:#fff}
+footer{background:var(--black);color:#cfcac1;padding:44px 0 36px;font-size:15px}
+footer .wrap{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:32px}
+footer h4{margin:0 0 10px;color:#fff;font-family:var(--hd);font-size:18px}
+footer a{display:block;text-decoration:none;margin:4px 0}footer a:hover{color:#fff}
+.copy{max-width:1120px;margin:28px auto 0;padding:18px 22px 0;border-top:1px solid #333;font-size:13.5px}
+@media (max-width:860px){
+nav{display:none;position:absolute;top:64px;left:0;right:0;background:var(--bg);flex-direction:column;padding:12px 22px 20px;border-bottom:1px solid var(--line)}
+nav.open{display:flex}#mb{display:block}
+.hero .wrap,.about,.patron .wrap,footer .wrap{grid-template-columns:1fr}
+.crest{max-width:300px;margin:0 auto 14px}.grid,.cam,.stats{grid-template-columns:repeat(2,1fr)}
+.tl li{grid-template-columns:70px 64px 1fr;gap:12px}.tl img{width:64px;height:64px}
+.gal{grid-template-columns:repeat(2,1fr)}.facts{grid-template-columns:1fr}.hgrid{grid-template-columns:1fr}section{padding:56px 0}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="stripe"></div>
+<div class="spons">This website was sponsored by <b>Anafo Hayford</b>, a member of TEIN UDS</div>
+<header><div class="wrap">
+<a class="brand" href="#top"><img src="images/logo.png" alt="NDC umbrella logo">TEIN UDS</a>
+<button id="mb" aria-expanded="false" aria-controls="nav">Menu</button>
+<nav id="nav"><a href="#about">About</a><a href="#patron">Patron</a><a href="#executives">Executives</a><a href="#past">Past presidents</a><a href="#events">Events</a><a href="#gallery">Gallery</a><a href="#join">Join</a></nav>
+</div></header>
+
+<main id="top">
+<div class="hero"><div class="wrap">
+<div>
+<h1>Tertiary Education Institutions Network<span>UDS Tamale Campus</span></h1>
+<p>The voice of NDC students at the University for Development Studies, Tamale Campus: organising, learning and serving.</p>
+<div class="cta"><a class="btn" href="#join">Join TEIN UDS</a><a class="btn alt" href="#executives">Meet the executives</a></div>
+</div>
+<div class="crest"><img src="images/logo.png" alt="NDC umbrella with eagle"></div>
+</div></div>
+
+<section id="about" class="alt-bg"><div class="wrap">
+<div class="about">
+<img class="ph" src="images/about-group.jpg" alt="TEIN UDS members group photo">
+<div>
+<h2>About TEIN UDS</h2>
+<p class="lead" style="margin-bottom:0">TEIN, the Tertiary Education Institutions Network, is the tertiary students’ wing of the National Democratic Congress. It began at KNUST in 1992 and became the umbrella for NDC students in all tertiary institutions in Ghana in 1994. At the UDS Tamale Campus, our chapter brings students together to build political awareness, defend student interests and prepare the next generation of leaders for Ghana’s development.</p>
+<div class="pillars">
+<div><b>Mission</b>To mobilise and equip tertiary students with the knowledge, skills and values to advance social democracy.</div>
+<div><b>Vision</b>A united, informed and service-minded student body shaping Ghana’s future.</div>
+<div><b>Values</b>Unity, discipline, integrity, service and respect for every student’s voice.</div>
+</div></div></div>
+<div class="hist"><h3>Our history</h3>
+<p class="lead">TEIN is an intellectual structure of the NDC Youth Wing, envisioned to bring together senior comrades (teaching and non-teaching staff) and junior comrades (students).</p>
+<div class="hgrid">
+<div><b>1992</b><p>The NDC’s university students’ network begins at KNUST.</p></div>
+<div><b>1994</b><p>The name TEIN is adopted for NDC student networks in all tertiary institutions, under National Youth Organiser Hon. E.T. Mensah. Dr. Rashid Pelpuo becomes the first TEIN president at the University of Cape Coast, alongside pioneers at the University of Ghana.</p></div>
+<div><b>A decade on</b><p>The NDC recognises TEIN in its constitution and gives it some voting rights.</p></div>
+<div><b>2019</b><p>A full structure is set up under National Youth Organiser Lawyer George Opare Addo: a National TEIN Secretariat with coordinators, a party database, and regional secretariats linking campuses to the national office.</p></div>
+</div></div>
+<div class="stats">
+<div><b>1</b><span>campus: Tamale</span></div><div><b>12</b><span>executives</span></div><div><b>510</b><span>members</span></div><div><b>6</b><span>events a year</span></div>
+</div>
+</div></section>
+
+<section id="patron" class="patron"><div class="wrap">
+<div class="pframe"><img src="images/patron.jpg" alt="Prof. Vida Nyagre Yakong, Patron of TEIN UDS"></div>
+<div>
+<h2>Prof. Vida Nyagre Yakong</h2>
+<p class="role">Patron, TEIN UDS</p>
+<p>Prof. Vida Nyagre Yakong is a nurse-midwife, medical anthropologist and educator at the University for Development Studies. She holds a PhD in Interdisciplinary Studies (Medical Anthropology), a Master of Science in Nursing and a Bachelor of Science in Nursing, all from the University of British Columbia Okanagan in Canada.</p>
+<p>At UDS she served as Head of Midwifery and later as Foundation Dean of the School of Nursing and Midwifery. In 2025 the University Council approved her promotion to Associate Professor of Medical Anthropology and Nursing.</p>
+<p>Beyond the lecture hall, she is founder and CEO of Ghana Rural Opportunities for Women (GROW), a non-profit working on maternal and child health and on education and economic opportunity for rural women in her home district of Nabdam. She has also co-authored children’s storybooks and an alphabet book in Nabit.</p>
+<div class="facts">
+<div><b>Recognition</b>Winner, Education and Research category, 4th National Nursing and Midwifery Excellence and Hall of Fame Awards (2024)</div>
+<div><b>Community impact</b>Free health screenings in Nabdam reaching hundreds of residents, with UBC Okanagan</div>
+<div><b>Academic partnerships</b>Helped strengthen the UDS–UBC Okanagan partnership</div>
+<div><b>Advocacy</b>Quality, ethical nursing and midwifery education</div>
+</div>
+<blockquote>“I decided to turn these challenges into a dream and a vision… to contribute back to my community.”</blockquote>
+</div></div></section>
+
+<section id="executives"><div class="wrap">
+<h2>The 12 executives</h2>
+<p class="lead">The 2026/27 leadership team of TEIN UDS. Replace the placeholder names and photos with the real ones.</p>
+<div class="grid">
+<div class="card"><img class="ph" style="object-position:top" src="images/executives/01-president.jpg" alt="Commey Nii Sheriff, President"><div><b>Commey Nii Sheriff</b><span>President</span></div></div>
+<div class="card"><img class="ph" style="object-position:top" src="images/executives/02-vice-president.jpg" alt="Afizi Promise, Vice President"><div><b>Afizi Promise</b><span>Vice President</span></div></div>
+<div class="card"><img class="ph" style="object-position:top" src="images/executives/03-general-secretary.jpg" alt="Anlaakuu Mark, General Secretary"><div><b>Anlaakuu Mark</b><span>General Secretary</span></div></div>
+<div class="card"><img class="ph" style="object-position:top" src="images/executives/04-deputy-general-secretary.jpg" alt="Executive Name, Deputy General Secretary"><div><b>Executive Name</b><span>Deputy General Secretary</span></div></div>
+<div class="card"><img class="ph" style="object-position:top" src="images/executives/05-organizer.jpg" alt="Executive Name, Organizer"><div><b>Executive Name</b><span>Organizer</span></div></div>
+<div class="card"><img class="ph" style="object-position:top" src="images/executives/06-deputy-organizer.jpg" alt="Executive Name, Deputy Organizer"><div><b>Executive Name</b><span>Deputy Organizer</span></div></div>
+<div class="card"><img class="ph" style="object-position:top" src="images/executives/07-treasurer.jpg" alt="Bashiru Zulkanaini Asumah, Treasurer"><div><b>Bashiru Zulkanaini Asumah</b><span>Treasurer</span></div></div>
+<div class="card"><img class="ph" style="object-position:top" src="images/executives/08-deputy-treasurer.jpg" alt="Arhin Frank Peprah, Deputy Treasurer"><div><b>Arhin Frank Peprah</b><span>Deputy Treasurer</span></div></div>
+<div class="card"><img class="ph" style="object-position:top" src="images/executives/09-womens-commissioner.jpg" alt="Hajaara Neena, Women’s Commissioner"><div><b>Hajaara Neena</b><span>Women’s Commissioner</span></div></div>
+<div class="card"><img class="ph" style="object-position:top" src="images/executives/10-deputy-womens-commissioner.jpg" alt="Issah Sherifa, Deputy Women’s Commissioner"><div><b>Issah Sherifa</b><span>Deputy Women’s Commissioner</span></div></div>
+<div class="card"><img class="ph" style="object-position:top" src="images/executives/11-communications-officer.jpg" alt="Abdul-Hadi Issah, Communications Officer"><div><b>Abdul-Hadi Issah</b><span>Communications Officer</span></div></div>
+<div class="card"><img class="ph" style="object-position:top" src="images/executives/12-deputy-communications-officer.jpg" alt="Dery Aaron, Deputy Communications Officer"><div><b>Dery Aaron</b><span>Deputy Communications Officer</span></div></div>
+</div>
+</div></section>
+
+<section id="past" class="alt-bg"><div class="wrap">
+<h2>Past presidents</h2>
+<p class="lead">Those who carried the umbrella before us.</p>
+<ol class="tl">
+<li><span class="yr">2024–2025</span><img src="images/past-presidents/past-president-1.jpg" alt="Past president 1"><div><b>Past President Name</b><span>President, TEIN UDS</span></div></li>
+<li><span class="yr">2023–2024</span><img src="images/past-presidents/past-president-2.jpg" alt="Past president 2"><div><b>Past President Name</b><span>President, TEIN UDS</span></div></li>
+<li><span class="yr">2022–2023</span><img src="images/past-presidents/past-president-3.jpg" alt="Past president 3"><div><b>Past President Name</b><span>President, TEIN UDS</span></div></li>
+<li><span class="yr">2021–2022</span><img src="images/past-presidents/past-president-4.jpg" alt="Past president 4"><div><b>Past President Name</b><span>President, TEIN UDS</span></div></li>
+<li><span class="yr">2020–2021</span><img src="images/past-presidents/past-president-5.jpg" alt="Past president 5"><div><b>Past President Name</b><span>President, TEIN UDS</span></div></li>
+</ol>
+</div></section>
+
+
+<section id="events" class="alt-bg"><div class="wrap">
+<h2>Upcoming events</h2>
+<p class="lead">Sample entries. Edit the dates and details.</p>
+<div class="ev">
+<article><div class="date">12<small>DEC</small></div><div><h3>Freshers’ orientation and membership drive</h3><p>Welcome new students and register them as members. Venue to be confirmed.</p></div></article>
+<article><div class="date">20<small>JAN</small></div><div><h3>Leadership and public speaking workshop</h3><p>Hands-on training for aspiring student leaders across campuses.</p></div></article>
+<article><div class="date">15<small>FEB</small></div><div><h3>Community service day</h3><p>Health screening and clean-up exercise with the patron’s support.</p></div></article>
+</div></div></section>
+
+<section id="gallery"><div class="wrap">
+<h2>Gallery</h2>
+<p class="lead">Moments from our rallies, congresses and outreach.</p>
+<div class="gal">
+<img class="ph" src="images/gallery/gallery-1.jpg" alt="Gallery photo 1">
+<img class="ph" src="images/gallery/gallery-2.jpg" alt="Gallery photo 2">
+<img class="ph" src="images/gallery/gallery-3.jpg" alt="Gallery photo 3">
+<img class="ph" src="images/gallery/gallery-4.jpg" alt="Gallery photo 4">
+<img class="ph" src="images/gallery/gallery-5.jpg" alt="Gallery photo 5">
+<img class="ph" src="images/gallery/gallery-6.jpg" alt="Gallery photo 6">
+</div>
+</div></section>
+
+<section id="join" class="join"><div class="wrap">
+<h2>Be part of the umbrella family</h2>
+<p>Membership registration is currently closed. In the meantime, volunteer for an event or reach out to your executives.</p>
+<a class="btn" href="mailto:info@teinuds.com?subject=Join%20TEIN%20UDS">Join TEIN UDS</a>
+<div class="regnote"><span class="badge">Registration closed</span><p>Watch out for registration opening. Follow our official pages for the announcement.</p></div>
+</div></section>
+</main>
+
+<footer><div class="wrap">
+<div><h4>TEIN UDS</h4>Tertiary Education Institutions Network, University for Development Studies, Tamale Campus, Ghana.</div>
+<div><h4>Quick links</h4><a href="#about">About</a><a href="#executives">Executives</a><a href="#past">Past presidents</a><a href="#gallery">Gallery</a></div>
+<div><h4>Contact</h4><a href="mailto:info@teinuds.com">info@teinuds.com</a><a href="tel:+233542330318">President: +233 54 233 0318</a><a href="tel:+233548810809">General Secretary: +233 54 881 0809</a><a href="#">Facebook</a><a href="#">Instagram</a><a href="#">X (Twitter)</a></div>
+</div><div class="copy">© 2026 TEIN UDS. All rights reserved.<br>This website was sponsored by Anafo Hayford, a member of TEIN UDS.</div></footer>
+
+<script>
+var mb=document.getElementById("mb"),nv=document.getElementById("nav");
+mb.onclick=function(){var o=nv.classList.toggle("open");mb.setAttribute("aria-expanded",o)};
+nv.onclick=function(){nv.classList.remove("open");mb.setAttribute("aria-expanded","false")};
+</script>
+</body>
+</html>
